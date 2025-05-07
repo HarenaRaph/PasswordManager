@@ -10,8 +10,9 @@ namespace PasswordManager.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
-        [Unique]
-        public string Website { get; set; }
+        public string Plateform { get; set; }
+
+        public string  Email { get; set; }
 
         public string Username { get; set; }
 

@@ -21,9 +21,10 @@ public partial class LoginCredentialItemPage : ContentPage
         this.database = database;
     }
 
+
     private async void OnSaveClicked(object sender, EventArgs e)
     {
-        if (string.IsNullOrWhiteSpace(Item.Website))
+        if (string.IsNullOrWhiteSpace(Item.Plateform))
         {
             await DisplayAlert("Site obligatoire", "Veuillez entrer le nom d'un site web pour continuer", "OK");
             return;
